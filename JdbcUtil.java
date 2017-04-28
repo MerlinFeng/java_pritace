@@ -15,10 +15,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import domain.UserInfo;
+//import domain.UserInfo;
 
-
-public class JdbcUtils {
+class JdbcUtils {
     //数据库用户名
     private static final String USERNAME = "root";
     //数据库密码
@@ -285,10 +284,10 @@ public class JdbcUtils {
         String sql = "select * from userinfo where username = ? ";
         List<Object> params = new ArrayList<Object>();
         params.add("李四");
-        UserInfo userInfo;
+//        UserInfo userInfo;
         try {
-            userInfo = jdbcUtils.findSimpleRefResult(sql, params, UserInfo.class);
-            System.out.print(userInfo);
+//            userInfo = jdbcUtils.findSimpleRefResult(sql, params, UserInfo.class);
+//            System.out.print(userInfo);
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
